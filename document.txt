@@ -1,0 +1,74 @@
+=========================================================================================
+
+                    --  E D I T O R   DE    T E X T O  --
+
+=========================================================================================
+
+1.Creamos el documento HTML (sheet html=https://www.lawebdelprogramador.com/pdf/files/1498220419_html5-cheatsheet-emezeta.jpg)
+
+2. Añadimos la ruta de CSS y JAVASCRIPT + los iconos y fuentes.
+
+
+
+________________________________________________________________________________________
+
+                            //  H T M L 5 //
+
+<link> especifica la relación entre el documento actual y un recurso externo.
+    * href
+    Este atributo especifica la URL del recurso enlazado. La URL debe ser absoluta o relativa.
+    * rel
+    Este atributo indica la relación del documento enlazado con el actual.
+
+
+
+________________________________________________________________________________________
+
+                            //  C S S //
+
+--PROPIEDADES PERSONALIZADAS (variables)--
+
+    las propiedades personalizadas (también conocidas como variables) son entidades definidas por autores de CSS que contienen valores específicos que se pueden volver a utilizar en un documento. Se establecen mediante la notación de propiedades personalizadas (por ejemplo, --main-color: black;) y se acceden mediante la función var() (por ejemplo, color: var (--main-color);).
+
+    :root (pseudoclase) aplicable globalmente al documento HTML.
+    
+    background-color: var(--main-bg-color);
+
+
+
+
+
+________________________________________________________________________________________
+
+                            //  JAVASCRIPT //
+
+-- Logica: utilizamos Document.execCommand, entramos en el modo desing, a traves del metodo execCommand manipulamos el contenido
+
+SINTAXIS: execCommand(aCommandName, aShowDefaultUI, aValueArgument)
+
+--PARAMETROS--
+
+aCommandName
+    *Una DOMString que especifica el nombre del comando a ejecutar. Vea Comandos para una lista de posibles comandos.
+
+aShowDefaultUI
+    *Un Boolean que indica si la interfaz de usuario por defecto se debe mostrar. Esto no se ha implementado en Mozilla.
+
+aValueArgument
+    *Una DOMString representando algunos comandos (como insertImage) requiere un argumento valor extra (url de la imagen). Pasar un argumento de null si no se necesita ningún argumento
+
+COMANDOS: https://developer.mozilla.org/es/docs/Web/API/Document/execCommand
+
+
+________________________________________________________________________________________
+
+                            //  RECURSOS //
+
+Color Hunt: https://colorhunt.co/palettes/light
+
+Code Source: https://codingartistweb.com/2022/04/rich-text-editor-with-javascript/
+
+https://www.youtube.com/watch?v=la-0HOaNL10&ab_channel=CodingArtist
+
+
+Musica: https://www.youtube.com/watch?v=goxmvGJkoi0&ab_channel=LO-FISENPAI
