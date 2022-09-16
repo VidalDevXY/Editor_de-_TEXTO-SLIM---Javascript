@@ -9,6 +9,7 @@
     --secundary-color:#73777B;
     --orange-sugar:#EC994B;
     --light-base:#F9F9F9;
+    --black-carbon:#020929;
 
     /*------ Font and typography -------*/
     /*.5rem = 8px | 1rem = 16px...*/
@@ -16,6 +17,82 @@
 
 }
 
+
+/*=============== GLOBALS ================*/
+
+button
+{
+    height: 28px;
+    width: 28px;
+    display: grid;
+    place-items: center;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    border: none;
+    background-color: var(--light-base);
+    outline: none;
+    color: var(--black-carbon);
+}
+
+select
+{
+    padding: 3px;
+    border: 1px solid var(--black-carbon);
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+}
+
+.options label,
+.options select
+{
+    font-family: var(--body-font);
+}
+
+.input-wrapper
+{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+input[type="color"]
+{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: transparent;
+    height: 21px;
+    width: 39px;
+    border: none;
+    cursor: pointer;
+}
+
+input[type="color"]::-webkit-color-swatch
+{
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    box-shadow: 0 0 0 2px var(--light-base), 0 0 0 3px var(--black-carbon);
+}
+
+input[type="color"]::-moz-color-swatch /* Style for Firefox*/
+{
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    box-shadow: 0 0 0 2px var(--light-base), 0 0 0 3px var(--black-carbon);
+}
+/*=============== H T M L ================*/
 *
 {
     margin: 0;
@@ -25,5 +102,41 @@
 
 body
 {
+    background-color: var(--primary-color);
+}
+
+.container
+{
     background-color: var(--light-base);
+    width: 90vmin;
+    padding: 50px 30px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    filter: drop-shadow(3px 2px 3px #000);
+}
+
+.options
+{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 15px;
+}
+
+.text-input
+{
+    margin-top: 10px;
+    border: 1px solid var(--secundary-color);
+    padding: 20px;
 }

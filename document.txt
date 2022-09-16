@@ -8,17 +8,30 @@
 
 2. Añadimos la ruta de CSS y JAVASCRIPT + los iconos y fuentes.
 
+3. Creamos las etiquetas de los botones con sus respectivos iconos, llamados en pagina externa.
+
+4. Creamos el diseño de options y los botones + la caja del texto.
+
 
 
 ________________________________________________________________________________________
 
                             //  H T M L 5 //
 
-<link> especifica la relación entre el documento actual y un recurso externo.
+*<link> especifica la relación entre el documento actual y un recurso externo.
     * href
     Este atributo especifica la URL del recurso enlazado. La URL debe ser absoluta o relativa.
     * rel
     Este atributo indica la relación del documento enlazado con el actual.
+
+--
+
+*contenteditable: La propiedad contentEditable de la interfaz HTMLElement especifica si el elemento es editable o no. Este atributo puede tener los siguientes valores:
+
+    'true' indica si el elemento es contenteditable.
+    'false' indica que el elemento no puede ser editado.
+    'inherit' indica que el elemento hereda el estado editable del padre.
+
 
 
 
@@ -34,6 +47,10 @@ ________________________________________________________________________________
     
     background-color: var(--main-bg-color);
 
+--
+
+* translate(): La función de CSS translate() recoloca un elemento en el eje horizontal y/o vertical
+
 
 
 
@@ -42,7 +59,7 @@ ________________________________________________________________________________
 
                             //  JAVASCRIPT //
 
--- Logica: utilizamos Document.execCommand, entramos en el modo desing, a traves del metodo execCommand manipulamos el contenido
+-- Logica: utilizamos Document.execCommand, entramos en el modo desing, a traves del metodo execCommand manipulamos el contenido.
 
 SINTAXIS: execCommand(aCommandName, aShowDefaultUI, aValueArgument)
 
@@ -62,9 +79,11 @@ COMANDOS: https://developer.mozilla.org/es/docs/Web/API/Document/execCommand
 
 ________________________________________________________________________________________
 
-                            //  RECURSOS //
+                            //   RECURSOS   //
 
 Color Hunt: https://colorhunt.co/palettes/light
+
+Sheet FLEXBOX: https://flexboxsheet.com/
 
 Code Source: https://codingartistweb.com/2022/04/rich-text-editor-with-javascript/
 
